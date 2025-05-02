@@ -211,7 +211,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `tb_access_ctrl` (
   `tk_id` varchar(11) NOT NULL,
   `ctrl_ids` varchar(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -224,7 +224,7 @@ CREATE TABLE `tb_core_mailcamp_config` (
   `mconfig_name` varchar(50) DEFAULT NULL,
   `mconfig_data` mediumtext DEFAULT NULL,
   `date` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -349,7 +349,7 @@ CREATE TABLE `tb_data_mailcamp_live` (
   `platform` mediumtext DEFAULT NULL,
   `device_type` mediumtext DEFAULT NULL,
   `all_headers` mediumtext DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -426,7 +426,7 @@ CREATE TABLE `tb_hf_list` (
   `file_original_name` varchar(111) DEFAULT NULL,
   `file_header` varchar(111) NOT NULL,
   `date` varchar(111) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -439,7 +439,7 @@ CREATE TABLE `tb_hland_page_list` (
   `page_name` mediumtext DEFAULT NULL,
   `page_file_name` varchar(111) DEFAULT NULL,
   `date` varchar(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -454,7 +454,7 @@ CREATE TABLE `tb_ht_list` (
   `file_extension` varchar(111) DEFAULT NULL,
   `file_header` varchar(111) DEFAULT NULL,
   `date` varchar(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -468,7 +468,7 @@ CREATE TABLE `tb_log` (
   `log` text DEFAULT NULL,
   `ip` varchar(55) DEFAULT NULL,
   `date` varchar(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -499,7 +499,7 @@ CREATE TABLE `tb_main` (
 CREATE TABLE `tb_main_cron` (
   `id` int(11) NOT NULL,
   `pid` int(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -514,7 +514,7 @@ CREATE TABLE `tb_main_variables` (
   `baseurl` varchar(111) DEFAULT NULL,
   `time_zone` varchar(111) DEFAULT NULL,
   `time_format` varchar(222) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -529,7 +529,7 @@ CREATE TABLE `tb_pl_list` (
   `pl_type` varchar(111) DEFAULT NULL,
   `pl_sub_type` varchar(111) DEFAULT NULL,
   `date` varchar(111) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -542,7 +542,7 @@ CREATE TABLE `tb_store` (
   `name` varchar(111) NOT NULL,
   `info` varchar(700) DEFAULT NULL,
   `content` mediumtext DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Indexes for dumped tables
